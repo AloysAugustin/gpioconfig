@@ -12,3 +12,23 @@ through it, sometimes not, and so on. This library allows me to control this beh
 simply by putting a few jumpers on the GPIO pins, without having to log into the Pi
 (which requires a serial cable if it has no network connection...)
 
+### Usage
+
+This module requires the `RPi.GPIO`module to be installed (it is present by default in
+Raspbian).
+
+Then use the `get_status` function to get the state of a pair:
+```python
+import gpioconfig as gc
+shorted = gc.get_status(pair_number)
+```
+
+`pair_number` must be one of the following:
+`1` for pins number (39, 40) (the closest to the USB ports)
+`2` for pins number (37, 38)
+`3` for pins number (35, 36)
+`4` for pins number (33, 34)
+`5` for pins number (31, 32)
+`6` for pins number (29, 30)
+`7` for pins number (27, 28)
+
