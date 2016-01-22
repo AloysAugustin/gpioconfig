@@ -15,7 +15,8 @@ simply by putting a few jumpers on the GPIO pins, without having to log into the
 ### Usage
 
 This module requires the `RPi.GPIO`module to be installed (it is present by default in
-Raspbian).
+Raspbian). As all programs interacting with GPIO pins, python must be run as root when
+using this module.
 
 Then use the `get_status` function to get the state of a pair:
 ```python
@@ -30,4 +31,7 @@ shorted = gc.get_status(pair_number)
 + `4` for pins number (33, 34)
 + `5` for pins number (31, 32)
 + `6` for pins number (29, 30)
+
+You can have a look at the `example.py` script, that runs a command if a given pair is
+connected, and a different one otherwise.
 
