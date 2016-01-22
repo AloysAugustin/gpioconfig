@@ -14,8 +14,8 @@ if __name__ == '__main__':
     pair = int(sys.argv[1])
 
     if gc.get_status(pair):
-        os.system(argv[2])
+        os.system(sys.argv[2])
     elif len(sys.argv) > 3:
-        os.system(argv[3])
+        os.system(sys.argv[3])
 
 
