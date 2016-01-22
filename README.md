@@ -33,5 +33,9 @@ shorted = gc.get_status(pair_number)
 + `6` for pins number (29, 30)
 
 You can have a look at the `example.py` script, that runs a command if a given pair is
-connected, and a different one otherwise.
+connected, and a different one otherwise. Example run:
+```shell
+$ sudo python example.py 1 'echo "Pair 1 is connected!"' 'echo "Pair 1 is not connected"'
+Pair 1 is connected!
+```
 
