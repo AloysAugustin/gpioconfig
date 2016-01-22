@@ -46,8 +46,6 @@ PAIRS = {
     5 : PairConfig(31, True, [{'channel': 31, 'direction': GPIO.IN, 'pull_up_down': GPIO.PUD_UP}, 
                               {'channel': 32, 'direction': GPIO.OUT, 'initial': GPIO.LOW}]),
     6 : PairConfig(29, True, [{'channel': 29, 'direction': GPIO.IN, 'pull_up_down': GPIO.PUD_UP}]),
-    7 : PairConfig(27, True, [{'channel': 27, 'direction': GPIO.IN, 'pull_up_down': GPIO.PUD_UP}, 
-                              {'channel': 28, 'direction': GPIO.OUT, 'initial': GPIO.LOW}]),
 }
 
 

@@ -24,11 +24,10 @@ shorted = gc.get_status(pair_number)
 ```
 
 `pair_number` must be one of the following:
-`1` for pins number (39, 40) (the closest to the USB ports)
-`2` for pins number (37, 38)
-`3` for pins number (35, 36)
-`4` for pins number (33, 34)
-`5` for pins number (31, 32)
-`6` for pins number (29, 30)
-`7` for pins number (27, 28)
++ `1` for pins number (39, 40) (the closest to the USB ports)
++ `2` for pins number (37, 38)
++ `3` for pins number (35, 36)
++ `4` for pins number (33, 34)
++ `5` for pins number (31, 32)
++ `6` for pins number (29, 30)
 
