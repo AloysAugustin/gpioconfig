@@ -30,7 +30,7 @@ class PairConfig:
         for conf in self.config:
             GPIO.setup(**conf)
         # Reading
-        status = (GPIO.input(self.read) == self.invert)
+        status = (GPIO.input(self.read) != self.invert)
         # Pin cleanup (saves power)
         for conf in self.config:
             GPIO.cleanup(conf['channel'])
