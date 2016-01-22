@@ -37,11 +37,11 @@ class PairConfig:
         return status
 
 PAIRS = {
-    1 : PairConfig(40, True, [{'channel': 40, 'direction': GPIO.INPUT, 'pull_up_down': GPIO.PUD_UP}]),
-    2 : PairConfig(38, True, [{'channel': 38, 'direction': GPIO.INPUT, 'pull_up_down': GPIO.PUD_UP}, 
-                              {'channel': 37, 'direction': GPIO.OUTPUT, 'initial': GPIO.LOW}]),
-    3 : PairConfig(36, True, [{'channel': 36, 'direction': GPIO.INPUT, 'pull_up_down': GPIO.PUD_UP}, 
-                              {'channel': 35, 'direction': GPIO.OUTPUT, 'initial': GPIO.LOW}]),
+    1 : PairConfig(40, True, [{'channel': 40, 'direction': GPIO.IN, 'pull_up_down': GPIO.PUD_UP}]),
+    2 : PairConfig(38, True, [{'channel': 38, 'direction': GPIO.IN, 'pull_up_down': GPIO.PUD_UP}, 
+                              {'channel': 37, 'direction': GPIO.OUT, 'initial': GPIO.LOW}]),
+    3 : PairConfig(36, True, [{'channel': 36, 'direction': GPIO.IN, 'pull_up_down': GPIO.PUD_UP}, 
+                              {'channel': 35, 'direction': GPIO.OUT, 'initial': GPIO.LOW}]),
 }
 
 
