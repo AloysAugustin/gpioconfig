@@ -22,11 +22,11 @@ class PairConfig:
         self.read = read
         self.invert = invert
         self.config = config
+        GPIO.setmode(GPIO.BOARD)
 
     def status(self):
         """ Returns True if the pair of pins is connected, False otherwise """
         # Pin setup
-        GPIO.setmode(GPIO.BOARD)
         for conf in self.config:
             GPIO.setup(**conf)
         # Reading
